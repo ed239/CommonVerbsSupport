@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="0; url=/" />
+</head>
+<body>
+  <script>
+    // Redirect all 404 requests to index.html while preserving the path
+    (function() {
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      window.location.replace('/?' + 'p=' + path + search + hash);
+    })();
+  </script>
+</body>
+</html>

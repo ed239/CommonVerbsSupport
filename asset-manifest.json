@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CommonVerbsSupport/static/css/main.6735bfbd.css",
-    "main.js": "/CommonVerbsSupport/static/js/main.2048adff.js",
+    "main.css": "/CommonVerbsSupport/static/css/main.1ee78f17.css",
+    "main.js": "/CommonVerbsSupport/static/js/main.d560e456.js",
     "static/js/453.124452b6.chunk.js": "/CommonVerbsSupport/static/js/453.124452b6.chunk.js",
     "static/media/AppLogo.png": "/CommonVerbsSupport/static/media/AppLogo.a7f8597046358105de19.png",
     "index.html": "/CommonVerbsSupport/index.html",
-    "main.6735bfbd.css.map": "/CommonVerbsSupport/static/css/main.6735bfbd.css.map",
-    "main.2048adff.js.map": "/CommonVerbsSupport/static/js/main.2048adff.js.map",
+    "main.1ee78f17.css.map": "/CommonVerbsSupport/static/css/main.1ee78f17.css.map",
+    "main.d560e456.js.map": "/CommonVerbsSupport/static/js/main.d560e456.js.map",
     "453.124452b6.chunk.js.map": "/CommonVerbsSupport/static/js/453.124452b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6735bfbd.css",
-    "static/js/main.2048adff.js"
+    "static/css/main.1ee78f17.css",
+    "static/js/main.d560e456.js"
   ]
 }
