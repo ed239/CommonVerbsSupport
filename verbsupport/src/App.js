@@ -1,25 +1,26 @@
 import logo from './AppLogo.png';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch, Link, Routes} from 'react-router-dom';
+import Home from './components/Home';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import Contact from './components/Contact';
+import Navbar from './Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>Learn Hebrew: Common Verbs</h1>
-      <h2>App Support</h2>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h4>For any inquiries contact: learncommonverbs@gmail.com</h4>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Eden
-        </a> */}
-      </header>
-    </div>
+    <Router>
+    <Navbar />
+      <div className='App'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/contact" element={<Contact />} />
+          
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
+
 
 export default App;

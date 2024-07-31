@@ -1,39 +1,20 @@
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: rgb(8, 4, 4); /* Apply the background color to the entire page */
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 30vmin;
-  pointer-events: none;
-  border-radius: 20%;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 10s linear;
-  }
-}
-
-.App-header {
-  background-color: rgb(208, 226, 244);
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack text and carousel vertically */
+  width: 100%;
+  min-height: 100vh; /* Ensure the container covers at least the viewport height */
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
