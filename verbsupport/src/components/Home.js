@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-import logo from '../AppLogo.png';
 import {ReactComponent as AppleDownload} from './AppleDownload.svg';
 import quizImage from '../screenshotsApple/quiz2.png';
 import homeImage from '../screenshotsApple/home.png';

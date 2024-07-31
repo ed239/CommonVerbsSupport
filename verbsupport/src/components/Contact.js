@@ -1,9 +1,19 @@
 import React from "react";
+import './Contact.css';
+import logo from '../AppLogo.png';
 
 const Contact = () => {
     return(
-        <div>
-            <h1>Contact Page</h1>
+        <div className='AppC'>
+        <div className='column'>
+            <div className='textC'>
+                <h1>Contact Information</h1>
+                <img src={logo} className='App-logoC' alt='Logo'></img>
+                <h2>For any issues or inquiries please email: <br></br><br></br> <a href="mailto:learncommonverbs@gmail.com" style={{ color: 'white' }}>learncommonverbs@gmail.com</a></h2>
+            
+            </div> 
+            
+        </div>
         </div>
     );
 };

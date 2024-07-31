@@ -1,4 +1,4 @@
-import logo from './AppLogo.png';
+
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Link, Routes} from 'react-router-dom';
 import Home from './components/Home';
