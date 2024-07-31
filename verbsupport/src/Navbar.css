@@ -38,6 +38,11 @@
       justify-content: flex-end;
       align-items: center;
     }
+    .menu-toggle {
+      color: white;
+    }
+    
+  
   
     .nav-button:not(:first-child) {
       margin-left: 0;
