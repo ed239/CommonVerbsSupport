@@ -1,99 +1,181 @@
-
-
 .App {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  height: 100vh; 
-  background-color: #000000; 
+  height: 100vh;
+  background-color: #000000;
 }
 
 .App-Container {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  /* justify-content: space-between;  */
-  width: 100%; /* Adjust width as needed */
-  margin-left:7rem;
+  width: 100%;
+  margin-left: 7rem;
   margin-bottom: 7%;
-  
+}
 
+.column {
   
-  
+  display: flex;
+  flex-direction: column;
+  width: 70%; /* Ensure column takes up 60% of the width */
+  background-color: rgb(222, 103, 24);
 }
 
 .App-Text {
-  flex: 1; /* Takes up remaining space */
-  text-align: left; 
-  color:rgb(255, 255, 255);
-  font-size: 2.8rem;
-  
-  
-
-  
-  
-}
-.column{
-  display: flex;
-  flex-direction: column;
-
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-size: 2.6rem;
+  z-index: 1;
 }
 
 .App-Logo {
-  flex: 1; 
+  width: 30%; /* Ensure App-Logo takes up 40% of the width */
   text-align: right;
-  align-items: right;
+  background-color: aqua; /* Ensure background color is visible */
+  display: flex; /* Use flexbox to align items */
+  justify-content: center; /* Center content horizontally */
+}
+
+.AppleButton {
+  display: flex;
+  align-items: left;
+  
+}
+
+.AppleLogo {
+  
+  width: 12rem; /* Increase the width to make the button larger */
+  height: auto;
+}
+
+.carousel {
+  
+  position: absolute;
+  /* top: 50%; */
+  left: 75%;
+  bottom: 65%;
+  /* width: 200px;
+  height: 200px; */
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite linear;
+  
   
 }
   
-  /* .App-logo {
-    height: 30vmin;
-    pointer-events: none;
-    border-radius: 20%;
-  } */
+.carousel__item {
+  position: fixed;
+  /* top: 50%;
+  left: 50%; */
+  width: 6rem;
+  height: 6rem;
+  /* transform-origin: 50% -150px;  */
+  transform-origin: center center;
+  transform: rotateY(calc(var(--i) * 72deg)) translateZ(15rem); /* Position items around a circle */
+}
 
-  .AppleButton{
-    display: flex;
-    align-items: left;
+.carousel__item img {
+  width: auto;
+  height: 400%;
+  transform: rotateY(calc(-1 * var(--i) * 72deg)) translateZ(180); /* Keep images upright */
+}
+  
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+  
+@media (max-width: 1200px) and (min-width: 960px) {
+  .App-Text {
+    font-size: 2rem; /* Decrease font size */
   }
 
-  .AppleLogo{
-    width: 12rem;
-    height:auto;
-    
-  }
-
-  .phone{
-    height:20rem;
+  .AppleLogo {
+    width: 9rem; /* Decrease button width */
   }
 
   .carousel {
+  
     position: absolute;
     /* top: 50%; */
     left: 75%;
-    bottom: 65%;
-    /* width: 200px;
-    height: 200px; */
+    bottom: 60%;
+  }
+
+  .carousel__item img {
+    width: auto;
+    height: 300%;
+  }
+
+  .carousel__item {
+    width: auto;
+    height: 6rem;
+    transform: rotateY(calc(var(--i) * 72deg)) translateZ(10rem);
+  }
+}
+
+
+  
+
+
+  
+@media (max-width: 960px) {
+  .App-ContainerM {
+    display: flex;
+    flex-direction: column; /* Stack text and carousel vertically */
+    width: 100hh;
+    height:100vh;
+    background-color: rgb(10, 3, 3);
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  
+
+  .App-TextM {
+    color:rgb(255, 255, 255);
+    text-align: center; /* Center the text */
+    font-size: 2rem; /* Adjust font size */
+  }
+
+  .AppleButtonM{
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+
+  .carouselM {
+    
+    position: relative;
+    width: 2rem;
+    height: 2rem;
     transform-style: preserve-3d;
     animation: rotate 20s infinite linear;
+    z-index: 2;
+  
     
   }
   
-  .carousel__item {
-    position: fixed;
+  .carousel__itemM {
+    position: absolute;
+    width: 75px;
+    height: 75px;
     /* top: 50%;
     left: 50%; */
-    width: 100px;
-    height: 100px;
-    /* transform-origin: 50% -150px;  */
     transform-origin: center center;
-    transform: rotateY(calc(var(--i) * 72deg)) translateZ(15rem); /* Position items around a circle */
+  transform: rotateY(calc(var(--i) * 72deg)) translateZ(10rem);
   }
   
-  .carousel__item img {
+  .carousel__itemM img {
     width: auto;
-    height: 400%;
-    transform: rotateY(calc(-1 * var(--i) * 72deg)) translateZ(180); /* Keep images upright */
+    height: 300%;
+  }
+
+  .App-TextPlaceHolder{
+    color: #000000;
   }
   
   @keyframes rotate {
@@ -101,91 +183,7 @@
       transform: rotateY(0deg);
     }
     to {
-      transform: rotateY(180deg);
+      transform: rotateY(360deg);
     }
   }
-  
-
-
-
-  
-
-  
-  /* .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  } */
-  
-  @media (max-width: 960px) {
-    .App-ContainerM {
-      display: flex;
-      flex-direction: column; /* Stack text and carousel vertically */
-      width: 100hh;
-      height:100vh;
-      background-color: rgb(10, 3, 3);
-      align-items: center;
-      /* justify-content: center; */
-    }
-
-   
-  
-    .App-TextM {
-      color:rgb(255, 255, 255);
-      text-align: center; /* Center the text */
-      font-size: 2rem; /* Adjust font size */
-    }
-
-    .AppleButtonM{
-      align-items: center;
-      margin-bottom: 3rem;
-    }
- 
-  
-    .carouselM {
-      
-      position: relative;
-      width: 2rem;
-      height: 2rem;
-      transform-style: preserve-3d;
-      animation: rotate 20s infinite linear;
-      z-index: 2;
-    
-      
-    }
-    
-    .carousel__itemM {
-      position: absolute;
-      width: 75px;
-      height: 75px;
-      /* top: 50%;
-      left: 50%; */
-      transform-origin: center center;
-    transform: rotateY(calc(var(--i) * 72deg)) translateZ(10rem);
-    }
-    
-    .carousel__itemM img {
-      width: auto;
-      height: 300%;
-    }
-
-    .App-TextPlaceHolder{
-      color: #000000;
-    }
-    
-    @keyframes rotate {
-      from {
-        transform: rotateY(0deg);
-      }
-      to {
-        transform: rotateY(360deg);
-      }
-    }
-  }
+}
