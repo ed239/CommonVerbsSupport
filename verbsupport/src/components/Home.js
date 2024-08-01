@@ -7,11 +7,16 @@ import cardHebrewImage from '../screenshotsApple/cardHebrew.png';
 import cardEnglishImage from '../screenshotsApple/cardEnglish.png';
 import verbImage from '../screenshotsApple/verb.png';
 import './Home.css';
+import whiteGooglePlayImage from './whiteGooglePlay.png';
 
 
 
 const Home = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleGooglePlayClick = () => {
+    alert('Coming soon! As early as September!');
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,11 +39,18 @@ const Home = () => {
           <div className="App-Text">
             <h1>Learn Hebrew:<br></br> Common Verbs</h1>
           </div>
-          <div className="AppleButton">
-          <a href="https://apps.apple.com/kg/app/learn-hebrew-common-verbs/id6497066646" target="_blank" rel="noopener noreferrer">
-            <AppleDownload className="AppleLogo" />
-          </a>
-          </div>
+          <div className="Buttons">
+              <div className="AppleButton">
+                <a href="https://apps.apple.com/kg/app/learn-hebrew-common-verbs/id6497066646" target="_blank" rel="noopener noreferrer">
+                  <AppleDownload className="AppleLogo" />
+                </a>
+              </div>
+              <div className="GooglePlayButton" onClick={handleGooglePlayClick}>
+                <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" rel="noopener noreferrer">
+                  <img src={whiteGooglePlayImage} alt="Google Play" className="whiteGooglePlay" />
+                </a>
+              </div>
+            </div>
         </div>
         <div className="App-Logo">
           <div className="carousel">
@@ -57,10 +69,15 @@ const Home = () => {
           <div className="App-TextM">
             <h1>Learn Hebrew:<br></br> Common Verbs</h1>
           </div>
-          <div className="AppleButtonM">
-            <a href="https://apps.apple.com/kg/app/learn-hebrew-common-verbs/id6497066646" target="_blank" rel="noopener noreferrer">
-              <AppleDownload className="AppleLogo" />
-            </a>
+          <div className="ButtonsM">
+            <div className="AppleButtonM">
+              <a href="https://apps.apple.com/kg/app/learn-hebrew-common-verbs/id6497066646" target="_blank" rel="noopener noreferrer">
+                <AppleDownload className="AppleLogo" />
+              </a>
+            </div>
+            <div className="GooglePlayButtonM" onClick={handleGooglePlayClick}>
+                <img src={whiteGooglePlayImage} alt="Google Play" className="whiteGooglePlayM" />
+            </div>
           </div>
         
           <div className="carouselM">
