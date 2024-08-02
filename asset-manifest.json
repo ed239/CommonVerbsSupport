@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/CommonVerbsSupport/static/css/main.60fd8fcc.css",
-    "main.js": "/CommonVerbsSupport/static/js/main.6f7934f3.js",
-    "static/js/453.124452b6.chunk.js": "/CommonVerbsSupport/static/js/453.124452b6.chunk.js",
-    "static/media/AppLogo.png": "/CommonVerbsSupport/static/media/AppLogo.a7f8597046358105de19.png",
-    "index.html": "/CommonVerbsSupport/index.html",
-    "main.60fd8fcc.css.map": "/CommonVerbsSupport/static/css/main.60fd8fcc.css.map",
-    "main.6f7934f3.js.map": "/CommonVerbsSupport/static/js/main.6f7934f3.js.map",
-    "453.124452b6.chunk.js.map": "/CommonVerbsSupport/static/js/453.124452b6.chunk.js.map"
+    "main.css": "/static/css/main.2854a811.css",
+    "main.js": "/static/js/main.a3b98322.js",
+    "static/js/453.124452b6.chunk.js": "/static/js/453.124452b6.chunk.js",
+    "static/media/verb.png": "/static/media/verb.3e2232535d7d7f6d69a2.png",
+    "static/media/cardEnglish.png": "/static/media/cardEnglish.a565a80532219997663a.png",
+    "static/media/cardHebrew.png": "/static/media/cardHebrew.92c01c665229d2797baa.png",
+    "static/media/home.png": "/static/media/home.d99700fcfdbd92c97f72.png",
+    "static/media/quiz2.png": "/static/media/quiz2.a08a08841a226f460e12.png",
+    "static/media/whiteGooglePlay.png": "/static/media/whiteGooglePlay.c17a8fb52431a8a6f091.png",
+    "static/media/AppLogo.png": "/static/media/AppLogo.a7f8597046358105de19.png",
+    "static/media/AppleDownload.svg": "/static/media/AppleDownload.969642b47a537eefe45f64aaa42f530b.svg",
+    "index.html": "/index.html",
+    "main.2854a811.css.map": "/static/css/main.2854a811.css.map",
+    "main.a3b98322.js.map": "/static/js/main.a3b98322.js.map",
+    "453.124452b6.chunk.js.map": "/static/js/453.124452b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60fd8fcc.css",
-    "static/js/main.6f7934f3.js"
+    "static/css/main.2854a811.css",
+    "static/js/main.a3b98322.js"
   ]
 }

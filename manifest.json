@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Learn Hebrew",
+  "name": "Learn Hebrew: Common Verbs App",
+  "homepage":"https://ed239.github.io/CommonVerbsSupport/",
   "icons": [
     {
       "src": "favicon.ico",
