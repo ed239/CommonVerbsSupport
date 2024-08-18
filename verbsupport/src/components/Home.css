@@ -3,6 +3,7 @@
   align-items: center;
   height: 100vh;
   background-color: #000000;
+  overflow-x: hidden;
 }
 
 .App-Container {
@@ -11,6 +12,7 @@
   width: 100%;
   margin-left: 7rem;
   margin-bottom: 7%;
+
 }
 
 .column {
@@ -31,7 +33,7 @@
 .App-Logo {
   width: 30%; /* Ensure App-Logo takes up 40% of the width */
   text-align: right;
-  background-color: aqua; /* Ensure background color is visible */
+  /* Ensure background color is visible */
   display: flex; /* Use flexbox to align items */
   justify-content: center; /* Center content horizontally */
 }
@@ -45,17 +47,23 @@
 .AppleButton {
   display: flex;
   align-items: left;
+  margin-top:0.1rem;
   
 }
 
 .GooglePlayButton {
   display: flex;
+  
+  
 
 }
 
 .whiteGooglePlay{
-  width: 13.3rem; /* Increase the width to make the button larger */
-  height: auto;
+  width: 13.1rem; 
+  height: 4.1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  
 
 }
 
@@ -112,9 +120,11 @@
 
   .AppleLogo {
     width: 9rem; /* Decrease button width */
+    margin-top: 0.05rem;
   }
 
   .whiteGooglePlay{
+    margin-top: 0.1rem;
     width: 9.8rem; /* Increase the width to make the button larger */
     height: auto;
   
@@ -182,7 +192,7 @@
   }
 
   .GooglePlayButtonM{
-    align-items: center;
+   
     margin-bottom: 3rem;
     cursor: pointer;
     
@@ -190,7 +200,7 @@
   }
 
   .whiteGooglePlayM{
-    cursor: pointer;
+    
     height: 3.58rem;
     width: auto;
 
