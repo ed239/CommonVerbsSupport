@@ -15,7 +15,8 @@ const Home = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleGooglePlayClick = () => {
-    alert('Coming soon! As early as September!');
+    // alert('Coming soon! As early as September!');
+    window.open('https://play.google.com/store/apps/details?id=com.verbs.flashcards&pli=1', '_blank')
   };
 
   useEffect(() => {
@@ -46,9 +47,9 @@ const Home = () => {
                 </a>
               </div>
               <div className="GooglePlayButton" onClick={handleGooglePlayClick}>
-                <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank" rel="noopener noreferrer">
+               
                   <img src={whiteGooglePlayImage} alt="Google Play" className="whiteGooglePlay" />
-                </a>
+           
               </div>
             </div>
         </div>
@@ -76,7 +77,9 @@ const Home = () => {
               </a>
             </div>
             <div className="GooglePlayButtonM" onClick={handleGooglePlayClick}>
-                <img src={whiteGooglePlayImage} alt="Google Play" className="whiteGooglePlayM" />
+               
+                  <img src={whiteGooglePlayImage} alt="Google Play" className="whiteGooglePlayM" />
+               
             </div>
           </div>
         
