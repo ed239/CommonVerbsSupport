@@ -38,7 +38,8 @@ const Home = () => {
       <div className="App-Container">
         <div className='column'>
           <div className="App-Text">
-            <h1>Learn Hebrew:<br></br> Common Verbs</h1>
+            <h1>Learn Hebrew<br></br> On The Go</h1>
+            <h4>Download now and start learning!</h4>
           </div>
           <div className="Buttons">
               <div className="AppleButton">
