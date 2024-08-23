@@ -18,7 +18,7 @@ const PrivacyPolicy = () =>{
             <h3>Third Party Services</h3>
             <p>No third-party services that collect or process personal data are used. This means that your information is not shared with or accessible to any external entities.</p>
             <h3>Contact Us</h3>
-            <p>Please email onthegolanguages@gmail.com for any issues.</p>
+            <p>Please email onthegolanguages@gmail.com for any issues. </p>
             </div>
         </div>
     );
