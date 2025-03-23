@@ -10,6 +10,12 @@
    
     
   }
+  .logo-container {
+    display: flex;
+    align-items: center; /* Vertically center the images */
+    justify-content: center; /* Horizontally center the images */
+    gap: 5rem; /* Add space between images */
+  }
 
 .column{
     display: flex;
