@@ -13,6 +13,7 @@ function App() {
       <div className='App'>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/russian" element={<Home />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />
           

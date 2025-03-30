@@ -13,6 +13,7 @@ import cardRussianImageRu from '../screenshotsAppleRu/cardRussian.png';
 import verbImageRu from '../screenshotsAppleRu/verb.png';
 import './Home.css';
 import whiteGooglePlayImage from './whiteGooglePlay.png';
+import { useNavigate, useLocation } from "react-router-dom";
 
 
 
@@ -109,11 +110,20 @@ import whiteGooglePlayImage from './whiteGooglePlay.png';
 
 // export default Home;
 const Home = () => {
-  const [language, setLanguage] = useState('en');
+  // const [language, setLanguage] = useState('en');
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [language, setLanguage] = useState(location.pathname === "/russian" ? "ru" : "en");
 
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
+    navigate(lang === "ru" ? "/russian" : "/");
   };
+
+  // const handleLanguageChange = (lang) => {
+  //   setLanguage(lang);
+  // };
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
