@@ -116,6 +116,13 @@ const Home = () => {
   const location = useLocation();
   const [language, setLanguage] = useState(location.pathname === "/russian" ? "ru" : "en");
 
+  useEffect(() => {
+    const userLang = navigator.language || navigator.userLanguage; // e.g., "ru-RU", "en-US"
+    if (!location.pathname.includes("/russian") && userLang.startsWith("ru")) {
+      navigate("/russian", { replace: true });
+    }
+  }, [location, navigate]);
+
   const handleLanguageChange = (lang) => {
     setLanguage(lang);
     navigate(lang === "ru" ? "/russian" : "/");

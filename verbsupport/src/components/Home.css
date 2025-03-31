@@ -1,11 +1,18 @@
 .engButton{
-  width: 5rem;
+  width: 6rem;
   height: 2rem;
   margin-right: 1rem;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  
 }
 .ruButton{
-  width: 5rem;
+  width: 6rem;
   height: 2rem;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
 
 }
 .langButtons{
