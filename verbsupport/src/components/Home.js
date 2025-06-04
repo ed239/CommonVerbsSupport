@@ -162,7 +162,7 @@ const Home = () => {
       title2: "на ходу",
       subtitle: "Скачайте сейчас и начните учиться!",
       appleLink: "https://apps.apple.com/ro/app/иврит-на-ходу/id6740445636",
-      googlePlayLink: "https://play.google.com/store/apps/details?id=com.verbs.flashcards",
+      googlePlayLink: "https://play.google.com/store/apps/details?id=com.verbs.flashcardsnew",
       images: [quizImageRu, homeImageRu, cardHebrewImageRu, cardRussianImageRu, verbImageRu]
     }
   };
